@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ag_book_roundedmedium';
+    src: url('fonts/ag_book_rounded_medium-webfont.woff2') format('woff2'),
+        url('fonts/ag_book_rounded_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('fonts/Roboto-Condensed.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --primary: #ffffff;
+    --secondary: #f7bc28;
+    --secondaryhover: #d69b06;
+    --textgris: #686868;
+    --fontPrimary: 'ag_book_roundedmedium';
+    --fontSecondary: 'Roboto-Condensed';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    margin-right: 0;
+    background-color: #ffff;
+}
+
+.img-nav {
+    height: 60px;
+}
+
+.menu {
+    background-color: var(--primary);
+    height: 70px;
+    top: 0;
+    z-index: 900;
+    position: fixed;
+    font-size: 13px;
+    width: 100%;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    list-style: none;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu__links {
+    list-style: none;
+    height: 100%;
+    margin-bottom: 0;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__link {
+    color: var(--textgris);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu__link:hover {
+    background-color: var(--secondary);
+    color: #ffff;
+}
+
+
+.menu__arrow {
+    font-size: 12px;
+    color: var(--textgris);
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu__nesting {
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    color: #ffffff;
+    transform: translateY(100%);
+    background-color: var(--secondary);
+}
+
+.menu__link--inside {
+    color: #ffffff;
+    padding: 30px 100px 30px 20px;
+}
+
+.menu__link--inside:hover {
+    background-color: var(--secondaryhover);
+}
+
+.menu__hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.menu__img {
+    display: block;
+    font-size: 32px;
+    color: var(--textgris);
+}
+
+/* -------Slider de imagenes-------- */
+.carousel.slide {
+    margin-top: 40px;
+}
+
+.carousel-item {
+    max-height: 700px;
+}
+
+.carousel-caption {
+    height: 100%;
+}
+
+.carousel-text {
+    height: 100%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-text .carousel-text-cont {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.carousel-text .carousel-btns {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+}
+
+.carousel-text .carousel-btns button{
+    border: none;
+    padding: 8px 13px;
+    border-radius: 8px;
+}
+
+.carousel-btns .btn-1{
+    background-color: var(--secondary);
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.carousel-btns .btn-1:hover{
+    background-color: var(--secondaryhover);
+}
+
+.carousel-btns .btn-2{
+    transition: all 0.3s;
+}
+
+.carousel-btns .btn-2:hover{
+    background-color: var(--textgris);
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.637);
+    /* Color del overlay */
+    color: #fff;
+    /* Color del texto del overlay */
+    padding: 20px;
+    /* Espaciado interno del overlay */
+}
+/* -------------------Nuestros servicios----------------- */
+
+
+.container-servicios{
+    border: 1px solid black;
+    padding: 80px 50px;
+}
+
+.container-servicios .cont-title{
+    text-align: center;
+}
+
+.grid-tarjetas{
+    border: 1px solid rgb(240, 0, 0);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.grid-tarjetas .tarjetas{
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.grid-tarjetas .tarjetas h4{
+    text-align: center;
+}
+
+@media (max-width:850px) {
+    body {
+        box-sizing: border-box;
+    }
+
+    .menu {
+        max-width: 100%;
+    }
+
+    .menu__hamburguer {
+        display: flex;
+    }
+
+    .menu__item {
+        --clip: 0;
+        overflow: hidden;
+    }
+
+    .menu__item--active {
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show {
+        background-color: #6d6d6d;
+    }
+
+
+    .menu__links {
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: var(--textgris);
+        overflow-y: auto;
+        display: grid;
+        color: #ffffff;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+        color: #ffffff;
+    }
+
+    .menu__arrow {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        background-color: var(--secondary);
+        transition: height .3s;
+    }
+
+    .menu__link--inside {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}
