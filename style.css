@@ -28,7 +28,7 @@
     --secondary: #f7bc28;
     --secondaryhover: #e6a400;
     --textgris: #686868;
-    --celeste: #3dc1e8;
+    --celeste: #37add1;
     --fontPrimary: 'ag_book_roundedmedium';
     --fontSecondary: 'Roboto-Condensed';
 }
@@ -48,13 +48,24 @@ main {
     height: 60px;
 }
 
+.menu__logo{
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.menu__logo a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
 .menu {
     background-color: var(--primary);
     height: 70px;
     top: 0;
     z-index: 900;
     position: fixed;
-    font-size: 13px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -157,21 +168,23 @@ main {
     color: var(--textgris);
 }
 
-.menu_contactos{
+.menu_contactos {
     display: flex;
     padding: 8px;
     align-items: center;
 }
 
-.menu_contactos .btn-contactos{
+.menu_contactos .btn-contactos {
     padding: 10px 15px;
     border: none;
     border-radius: 10px;
+    text-decoration: none;
     color: #ffffff;
     background-color: #00a128;
     transition: all 0.3s;
 }
-.menu_contactos .btn-contactos:hover{
+
+.menu_contactos .btn-contactos:hover {
     background-color: #015f18;
 }
 
@@ -487,6 +500,145 @@ main {
     background-color: var(--secondaryhover);
 }
 
+
+/* ---------------FORMULARIO COTIZACION---------------- */
+.container-form-cotizacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 50px;
+}
+
+.container-form-cotizacion .form {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.container-form-cotizacion .form form {
+    width: 70%;
+    background-color: var(--celeste);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 28px 3px rgba(0, 0, 0, 0.1);
+    color: var(--blanco);
+}
+
+.container-form-cotizacion .form h4 {
+    text-align: center;
+    font-weight: bolder;
+    color: var(--blanco);
+}
+
+.container-form-cotizacion .form div {
+    padding-top: 10px;
+}
+
+.container-form-cotizacion .form input {
+    font-size: 14px;
+}
+
+.container-form-cotizacion .form textarea {
+    font-size: 14px;
+}
+
+.container-form-cotizacion .cont-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container-form-cotizacion .btn-enviar {
+    padding: 13px 25px;
+    background-color: var(--textgris);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.container-form-cotizacion .btn-enviar:hover {
+    background-color: #464646;
+}
+
+.container-form-cotizacion .cont-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form-cotizacion .cont-img div {
+    width: 60%;
+}
+
+.container-form-cotizacion .cont-img img {
+    width: 100%;
+}
+
+/* -------------------------FOOTER----------------------- */
+
+footer {
+    padding: 50px 50px;
+    background: #3a3a3a;
+    color: var(--blanco);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-footer .grid-footer {
+    padding: 0 25px;
+    text-align: center;
+}
+
+.container-footer .grid-footer h5 {
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+.container-footer .grid-footer a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.container-footer .grid-footer .icon-logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.container-footer .grid-footer.servicios {
+    text-align: left;
+}
+
+.container-footer .grid-footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.container-footer .grid-footer .icons i {
+    font-size: 30px;
+    transition: all 0.3s;
+}
+
+.container-footer .grid-footer .icons i:hover {
+    color: var(--secondary);
+}
+
+.container-footer img {
+    width: 90px;
+    margin: 0 auto;
+}
+
 @media (max-width:850px) {
     body {
         box-sizing: border-box;
@@ -561,5 +713,73 @@ main {
         width: 90%;
         margin-left: auto;
         border-left: 1px solid #798499;
+    }
+
+    /* ----------------Contenido de servicios----------------- */
+
+    .grid-tarjetas .cont-tarjetas {
+        display: block;
+    }
+
+    .grid-tarjetas .cont-tarjetas {
+        width: 100%;
+    }
+
+    .grid-tarjetas {
+        padding: 20px 0;
+    }
+
+    .container-servicios {
+        padding: 40px 50px;
+    }
+
+    .grid-tarjetas .tarjetas {
+        margin-bottom: 20px;
+    }
+
+    /* --------------Contenido de nosotros---------------- */
+    .container-nosotros {
+        padding: 0px 0px;
+    }
+
+    .img-cont-text .cont-text {
+        padding: 30px 60px;
+    }
+
+    /* -----------------Logos de compañias asociadas-------------- */
+    .container-partners .grid-partners .cont-logos img {
+        width: 100px;
+    }
+
+
+    .container-relleno .contenido h5 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .container-nosotros .img-cont-text {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .container-partners .grid-partners .cont-logos {
+        display: block;
+    }
+
+    .container-form-cotizacion {
+        display: block;
+    }
+
+    .container-form-cotizacion .form form {
+        width: 100%;
+    }
+
+    .container-footer {
+        display: block;
+        width: 100%;
+    }
+
+    .container-footer .grid-footer.servicios {
+        text-align: center;
     }
 }
