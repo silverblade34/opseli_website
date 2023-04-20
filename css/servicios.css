@@ -1,0 +1,62 @@
+:root {
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+}
+
+.container-relleno-servicios {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* Asegura que el contenido del contenedor no se superponga al overlay */
+    background-image: url("../img/nosotros1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-relleno-servicios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color y opacidad del overlay */
+    z-index: 1;
+    /* Coloca el overlay detrás del contenido de texto */
+}
+
+.container-relleno-servicios .contenido {
+    position: relative;
+    z-index: 20;
+    margin: 0 90px;
+    text-align: left;
+    color: var(--blanco);
+    font-weight: bolder;
+}
+
+.container-relleno-servicios .contenido h2 {
+    color: var(--blanco);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.container-relleno-servicios .contenido h5 {
+    font-size: 22px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+
+.pdfobject-container {
+    height: 900px;
+    width: 70%;
+    border: 1rem solid rgba(0, 0, 0, .1);
+}

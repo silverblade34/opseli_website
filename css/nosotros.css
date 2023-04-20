@@ -13,7 +13,7 @@
     align-items: center;
     overflow: hidden;
     /* Asegura que el contenido del contenedor no se superponga al overlay */
-    background-image: url("img/nosotros2.jpg");
+    background-image: url("../img/nosotros2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,14 +55,24 @@
 }
 
 .container-nosotros.pagina {
-    padding: 0 50px;
+    padding: 0 200px;
 }
-
-
 
 .container-nosotros.pagina .cont-img {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding: 0 60px;
+}
+
+.container-nosotros.pagina .cont-img.valores{
+    justify-content: right;
+}
+
+.container-nosotros.pagina .cont-text .subtitulo{
+    text-align: center;
+}
+.container-nosotros.pagina .cont-text p{
+    text-align: justify; /* Centrar el texto horizontalmente */
 }
 
 .container-nosotros.pagina .cont-img img {
@@ -74,86 +84,4 @@
 .cont-text .valores h5 {
     color: var(--celeste);
     font-weight: bolder;
-}
-
-
-/* -------------------slider de imagenes----------------- */
-.container-slider-images {
-    display: flex;
-    justify-content: center;
-}
-
-.slider-galeria {
-    position: relative;
-    height: 550px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
-
-.swiper {
-    width: 950px;
-}
-
-.card {
-    position: relative;
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 400px;
-    margin: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    height: 40%;
-    width: 100%;
-    background: white;
-    border-radius: 20px 20px 0 0;
-}
-
-.card .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    z-index: 100;
-    height: 500px;
-
-}
-
-.card .card-content img {
-    width: 100%;
-}
-
-.button button:hover {
-    background: #6616d0;
-}
-
-.swiper-pagination {
-    position: absolute;
-    top: 450px;
-}
-
-.swiper-pagination-bullet {
-    height: 7px;
-    width: 26px;
-    border-radius: 25px;
-    background: white;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    opacity: 0.7;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    opacity: 1;
-    color: white;
 }
