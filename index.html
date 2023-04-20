@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Empresa dedicada al montaje electromecánico, mantenimiento, diseño de proyectos industriales, residenciales y automatización industrial. Ofrecemos servicios eléctricos industriales de calidad.">
+    <meta name="description"
+        content="Empresa dedicada al montaje electromecánico, mantenimiento, diseño de proyectos industriales, residenciales y automatización industrial. Ofrecemos servicios eléctricos industriales de calidad.">
     <title>Opseli - Servicios Eléctricos Industriales</title>
     <link rel="shortcut icon" href="img/logo_cuadrado-removebg-preview.png" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -16,30 +17,32 @@
     <link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.min.css">
     <script src="scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link AOS -->
+    <link href="scripts/aos/aos.css" rel="stylesheet">
+    <script src="scripts/aos/aos.js"></script>
 </head>
 
 
 <body>
     <nav class="menu">
         <section class="menu__container">
-            <div class="menu__logo"><a href="index.html"><img class="img-nav"
-                        src="img/logo_cuadrado-limpio.png"
-                        alt="Logo de OPSELI">OPSELI</a></div>
-    
+            <div class="menu__logo"><a href="index.html"><img class="img-nav" src="img/logo_cuadrado-limpio.png"
+                        alt="Logo de OPSELI"> <span>OPSELI</span></a></div>
+
             <ul class="menu__links">
                 <li class="menu__item">
                     <a href="index.html" class="menu__link">Inicio</a>
                 </li>
-    
+
                 <li class="menu__item  menu__item--show">
                     <a href="nosotros.html" class="menu__link">Nosotros</a>
                 </li>
-    
+
                 <li class="menu__item menu__item--show">
                     <a href="services.html" class="menu__link">Servicios</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">Contáctanos</a>
+                    <a href="contactanos.html" class="menu__link">Contáctanos</a>
                 </li>
                 <li class="menu_contactos">
                     <a href="https://wa.me/959951155?text=Hola,%20quiero%20contactarte%20desde%20el%20sitio%20web%20de%20OPSELI,%20estoy%20interesad@%20en%20los%20servicios"
@@ -54,7 +57,7 @@
                 <i class='bx bx-menu menu__img'></i>
             </div>
         </section>
-    </nav>    
+    </nav>
     <main>
         <div id="myCarousel" class="carousel slide">
             <div class="carousel-indicators">
@@ -73,8 +76,8 @@
                                 <p>Soluciones eléctricas para la industria: Montaje electromecánico, mantenimiento y
                                     automatización industrial.</p>
                                 <div class="carousel-btns">
-                                    <button class="btn-1">Más sobre nosotros</button>
-                                    <button class="btn-2">Contáctanos</button>
+                                    <a href="nosotros.html" class="btn-1">Más sobre nosotros</a>
+                                    <a href="contactanos.html" class="btn-2">Contáctanos</a>
                                 </div>
                             </div>
                         </div>
@@ -89,8 +92,8 @@
                                 <p>Especialistas en servicios eléctricos industriales: Montaje, mantenimiento y
                                     automatización de sistemas eléctricos.</p>
                                 <div class="carousel-btns">
-                                    <button class="btn-1">Más sobre nosotros</button>
-                                    <button class="btn-2">Contáctanos</button>
+                                    <a href="nosotros.html" class="btn-1">Más sobre nosotros</a>
+                                    <a href="contactanos.html" class="btn-2">Contáctanos</a>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +108,8 @@
                                 <p>Automatización industrial para tus proyectos: Diseño de proyectos y soluciones a
                                     medida.</p>
                                 <div class="carousel-btns">
-                                    <button class="btn-1">Más sobre nosotros</button>
-                                    <button class="btn-2">Contáctanos</button>
+                                    <a href="nosotros.html" class="btn-1">Más sobre nosotros</a>
+                                    <a href="contactanos.html" class="btn-2">Contáctanos</a>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +132,7 @@
             </div>
             <div class="grid-tarjetas">
                 <div class="cont-tarjetas">
-                    <div class="tarjetas">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="tarjetas">
                         <div class="icon-tarj">
                             <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
                         </div>
@@ -137,7 +140,7 @@
                         <p>• Diseño, elaboración, montaje y puesta en marcha de tableros eléctricos. </p>
                         <p>• Suministro y calibración de transductores de presión y temperatura</p>
                     </div>
-                    <div class="tarjetas">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="tarjetas">
                         <div class="icon-tarj">
                             <i class="fa-sharp fa-solid fa-microchip"></i>
                         </div>
@@ -145,7 +148,7 @@
                         <p>• Montajes Electromecánicos.</p>
                         <p>• Montajes de Subestaciones Eléctricas.</p>
                     </div>
-                    <div class="tarjetas">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="tarjetas">
                         <div class="icon-tarj">
                             <i class='bx bxs-building-house'></i>
                         </div>
@@ -156,16 +159,16 @@
                 </div>
             </div>
             <div class="cont-button">
-                <button>Conoce más de nuestros servicios <i
-                        class='bx bx-right-arrow-alt bx-fade-right-hover'></i></button>
+                <a href="services.html" data-aos="fade-up">Conoce más de nuestros servicios <i
+                        class='bx bx-right-arrow-alt bx-fade-right-hover'></i></a>
             </div>
         </div>
         <div class="container-nosotros">
             <div class="img-cont-text">
-                <div class="cont-img">
+                <div class="cont-img" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/tecnico-nosotros.jpg" alt="">
                 </div>
-                <div class="cont-text">
+                <div class="cont-text" data-aos="fade-left" data-aos-duration="2000">
                     <div>
                         <div class="cont-title">
                             <h2>¿Quienes somos?</h2>
@@ -183,8 +186,8 @@
                             <img src="https://opseli.com/wp-content/uploads/2020/11/logo_cuadrado.jpg" alt="">
                         </div>
                         <div class="cont-button">
-                            <button>Conoce más sobre nosotros <i
-                                    class='bx bx-right-arrow-alt bx-fade-right-hover'></i></button>
+                            <a href="nosotros.html">Conoce más sobre nosotros <i
+                                    class='bx bx-right-arrow-alt bx-fade-right-hover'></i></a>
                         </div>
                     </div>
                 </div>
@@ -197,16 +200,16 @@
             </div>
             <div class="grid-partners">
                 <div class="cont-logos">
-                    <div class="img-logos">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="img-logos">
                         <img src="img/partners/abb.jpg" alt="">
                     </div>
-                    <div class="img-logos">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="img-logos">
                         <img src="img/partners/rockwell.jpg" alt="">
                     </div>
-                    <div class="img-logos">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="img-logos">
                         <img src="img/partners/schneider.jpg" alt="">
                     </div>
-                    <div class="img-logos">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="img-logos">
                         <img src="img/partners/siemens.jpg" alt="">
                     </div>
                 </div>
@@ -220,7 +223,7 @@
                         & EFICACIA EN NUESTRO SERVICIO</h5>
                 </div>
                 <div class="cont-button-relleno">
-                    <button>Conoce más sobre nosotros <i class='bx bx-right-arrow-alt bx-fade-right-hover'></i></button>
+                    <a href="nosotros.html">Conoce más sobre nosotros <i class='bx bx-right-arrow-alt bx-fade-right-hover'></i></a>
                 </div>
             </div>
         </div>
@@ -244,11 +247,11 @@
                         </div>
                         <div>
                             <p>Correo: </p>
-                            <input type="text" class="form-control" placeholder="Ingresa tu correo">
+                            <input type="email" class="form-control" placeholder="Ingresa tu correo">
                         </div>
                         <div>
                             <p>N° Celular: </p>
-                            <input type="text" class="form-control" placeholder="Ingresa su número">
+                            <input type="number" class="form-control" placeholder="Ingresa su número">
                         </div>
                         <div>
                             <p>Mensaje(Opcional): </p>
@@ -292,6 +295,10 @@
             </div>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script>
+        AOS.init();
+    </script>
     <script src="scripts/typed/typed.umd.js"></script>
     <script src="scripts/script.js"></script>
     <script>

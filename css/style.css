@@ -41,6 +41,7 @@ body {
 main {
     width: 100%;
     margin-right: 0;
+    overflow: hidden;
     background-color: #ffff;
 }
 
@@ -215,6 +216,7 @@ main {
 
  .carousel-text-cont h2{
     font-weight: bolder;
+    font-size: 40px;
  }
 
 .carousel-text .carousel-btns {
@@ -224,10 +226,20 @@ main {
     justify-content: start;
 }
 
-.carousel-text .carousel-btns button {
+.carousel-text .carousel-btns .btn-1 {
+    border: none;
+    padding: 8px 13px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.carousel-text .carousel-btns .btn-2 {
     border: none;
     padding: 8px 13px;
     border-radius: 8px;
+    background-color: #b4b4b4;
+    text-decoration: none;
+    color: var(--blanco);
 }
 
 .carousel-btns .btn-1 {
@@ -347,7 +359,8 @@ main {
     justify-content: center;
 }
 
-.cont-button button {
+.cont-button a {
+    text-decoration: none;
     border: none;
     background-color: var(--secondary);
     padding: 12px 17px;
@@ -358,7 +371,7 @@ main {
     transition: all 0.5s;
 }
 
-.cont-button button:hover {
+.cont-button a:hover {
     background-color: var(--secondaryhover);
 }
 
@@ -489,18 +502,20 @@ main {
     font-size: 40px;
 }
 
-.cont-button-relleno button {
+.cont-button-relleno a {
     border: none;
+    text-decoration: none;
     background-color: var(--secondary);
     padding: 12px 17px;
     display: flex;
+    width:fit-content;
     align-items: center;
     border-radius: 15px;
     color: var(--blanco);
     transition: all 0.5s;
 }
 
-.cont-button-relleno button:hover {
+.cont-button-relleno a:hover {
     background-color: var(--secondaryhover);
 }
 
@@ -641,6 +656,21 @@ footer {
 .container-footer img {
     width: 90px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 851px) and (max-width: 1400px) {
+    .grid-tarjetas .cont-tarjetas{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1195px) {
+    .menu__logo span{
+        display: none;
+    }
+    .container-footer{
+        width: 80%;
+    }
 }
 
 @media (max-width:850px) {

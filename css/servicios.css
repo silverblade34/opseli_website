@@ -60,3 +60,174 @@
     width: 70%;
     border: 1rem solid rgba(0, 0, 0, .1);
 }
+
+
+/* -------------PRUEBA GALERIA DE IMAGENES------------ */
+
+/***TESTIMONIALS SECTION***/
+.section-testimonials {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+    font-size: 15px;
+}
+
+.testimonials-container {
+    padding: 5.0rem;
+    color: var(--textgris);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad del overlay */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.4s;
+}
+
+.gallery-item:hover::before {
+    opacity: 1; /* Mostrar el overlay al pasar el cursor */
+}
+
+.tarjetas-servicios-horizontal{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 35px 45px;
+    align-items: center;
+    border-radius: 25px;
+    min-height: 250px;
+    color: var(--blanco);
+    margin-bottom: 15px;
+    background-color: var(--celeste);
+}
+
+.tarjetas-servicios-horizontal h4{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.tarjetas-servicios-horizontal p{
+    font-size: 14px;
+}
+
+.tarjetas-servicios-horizontal .icon {
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.tarjetas-servicios-horizontal .icon:hover{
+    color: var(--secondary);
+}
+
+
+.container-servicios-brochure{
+    padding: 100px 0;
+}
+.cont-pdf{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 851px) and (max-width: 1195px) {
+    .container-nosotros.pagina {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width:850px) {
+    .section-testimonials {
+        display: block;
+    }
+
+    .testimonials-container {
+        padding: 2.0rem;
+    }
+
+    .tarjetas-servicios-horizontal{
+        display: block;
+    }
+    .tarjetas-servicios-horizontal .icon {
+        margin: 30px 0;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2.0rem;
+    }
+
+    .container-relleno-servicios .contenido {
+        margin: 0 25px;
+    }
+
+    .container-relleno-servicios {
+        min-height: 400px;
+    }
+    .container-relleno-servicios .contenido h2 {
+        font-size: 40px;
+    }
+
+    .container-relleno-servicios .contenido h5 {
+        font-size: 18px;
+    }
+
+    .pdfobject-container{
+        width: 90%;
+        height: 350px;
+    }
+
+    .container-servicios-brochure{
+        padding-top: 50px;
+    }
+
+}

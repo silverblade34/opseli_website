@@ -85,3 +85,42 @@
     color: var(--celeste);
     font-weight: bolder;
 }
+
+@media screen and (min-width: 851px) and (max-width: 1195px) {
+    .container-nosotros.pagina {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width:850px) {
+    .container-nosotros.pagina {
+        padding: 0 50px;
+    }
+    .container-nosotros.pagina .cont-img.valores{
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .container-nosotros.pagina .cont-img {
+        justify-content: center;
+    }
+
+    .container-relleno-nosotros .contenido {
+        margin: 0 25px;
+    }
+
+    .container-relleno-nosotros {
+        min-height: 400px;
+    }
+    .container-relleno-nosotros .contenido h2 {
+        font-size: 40px;
+    }
+
+    .container-relleno-nosotros .contenido h5 {
+        font-size: 18px;
+    }
+
+    .container-nosotros.pagina .img-cont-text .cont-text{
+        padding: 30px 0;
+    }
+}
