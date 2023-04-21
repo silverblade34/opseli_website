@@ -19,7 +19,8 @@
     <script src="scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- Sweet alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <!-- Link AOS -->
     <link href="scripts/aos/aos.css" rel="stylesheet">
     <script src="scripts/aos/aos.js"></script>
@@ -86,23 +87,23 @@
                     </div>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="2000" class="form">
-                    <form action="">
+                    <form id="formulariocotizacion2" method="POST">
                         <h4>Brindanos detalles</h4>
                         <div>
                             <p>Nombre: </p>
-                            <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                            <input type="text" name="Nombre" class="form-control" placeholder="Ingrese su nombre">
                         </div>
                         <div>
                             <p>Correo: </p>
-                            <input type="text" class="form-control" placeholder="Ingresa tu correo">
+                            <input type="email" name="Correo" class="form-control" placeholder="Ingresa tu correo">
                         </div>
                         <div>
                             <p>N° Celular: </p>
-                            <input type="text" class="form-control" placeholder="Ingresa su número">
+                            <input type="number" name="Numero" class="form-control" placeholder="Ingresa su número">
                         </div>
                         <div>
                             <p>Mensaje(Opcional): </p>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control"
+                            <textarea name="Mensaje" id="" cols="30" rows="5" class="form-control"
                                 placeholder="Escribe tu mensaje"></textarea>
                         </div>
                         <div class="cont-btn">
@@ -143,17 +144,20 @@
             </div>
         </div>
     </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Swiper JS -->
     <script>
         AOS.init();
     </script>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Swiper JS -->
+    <script src="scripts/contactanos.js"></script>
     <script src="scripts/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts/pdfObjet/pdfobject.js"></script>
-    <script>PDFObject.embed("pdf/pdf-brouchere.pdf", "#example1");
-    </script>
     <script src="scripts/typed/typed.umd.js"></script>
     <script>
         // Inicializar Typed.js
