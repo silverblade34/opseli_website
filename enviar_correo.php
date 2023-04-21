@@ -37,8 +37,14 @@ try {
     //Content
     $mail->isHTML(true);
     // Configura el contenido del correo
-    $mail->Subject = 'Formulario de contacto';
-    $mail->Body = "Nombre: $nombre\nCorreo: $correo\nN° Celular: $numero\nMensaje: $mensaje";
+    $mail->Subject = 'Formulario de contacto OPSELI.COM';
+    $mail->Body = "
+    <h2>Formulario de contacto OPSELI.COM</h2>
+    <p><strong>Nombre:</strong> $nombre</p>
+    <p><strong>Correo:</strong> $correo</p>
+    <p><strong>N° Celular:</strong> $numero</p>
+    <p><strong>Mensaje:</strong> $mensaje</p>
+";
 
 
     if (!isset($_POST)) {

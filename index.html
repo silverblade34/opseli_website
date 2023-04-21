@@ -16,6 +16,8 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.min.css">
     <script src="scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Sweet alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Link AOS -->
     <link href="scripts/aos/aos.css" rel="stylesheet">
@@ -223,7 +225,8 @@
                         & EFICACIA EN NUESTRO SERVICIO</h5>
                 </div>
                 <div class="cont-button-relleno">
-                    <a href="nosotros.html">Conoce más sobre nosotros <i class='bx bx-right-arrow-alt bx-fade-right-hover'></i></a>
+                    <a href="nosotros.html">Conoce más sobre nosotros <i
+                            class='bx bx-right-arrow-alt bx-fade-right-hover'></i></a>
                 </div>
             </div>
         </div>
@@ -239,7 +242,7 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form action="enviar_correo.php" method="POST">
+                    <form id="formulariocotizacion" method="POST">
                         <h4>Brindanos detalles</h4>
                         <div>
                             <p>Nombre: </p>
@@ -295,10 +298,14 @@
             </div>
         </div>
     </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Swiper JS -->
     <script>
         AOS.init();
     </script>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" defer></script>
     <script src="scripts/typed/typed.umd.js"></script>
     <script src="scripts/script.js"></script>
     <script>

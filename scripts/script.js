@@ -91,3 +91,37 @@ myCarousel.querySelector('.carousel-control-prev').addEventListener('click', fun
 
 
 
+// ------------------CONFIGURACION DE ENVIO DE CORREOS--------------
+
+$(document).ready(function() {
+    // Captura el evento de envío del formulario
+    $("#formulariocotizacion").on("submit", function(event) {
+        event.preventDefault(); // Evita que se recargue la página
+
+        // Realiza la petición AJAX
+        $.ajax({
+            url: "enviar_correo.php", // URL del archivo PHP que procesa el formulario
+            type: "POST", // Método de envío del formulario
+            data: $(this).serialize(), // Datos del formulario serializados
+            success: function(response) {
+                // Procesa la respuesta del servidor
+                // Mostrar el mensaje de retorno como un modal de SweetAlert
+                swal({
+                    title: "Mensaje enviado",
+                    text: response,
+                    icon: "success",
+                    button: "Cerrar",
+                });
+            },
+            error: function() {
+                // Maneja el error si la petición AJAX falla
+                swal({
+                    title: "Error",
+                    text: "Ocurrió un error al enviar el mensaje",
+                    icon: "error",
+                    button: "Cerrar",
+                });
+            }
+        });
+    });
+});
